@@ -62,6 +62,7 @@ flutter:
     - lib/assets/grocerybag.png
     - lib/assets/google.png
     - lib/assets/Facebook_Logo_Primary.png
+    - lib/assets/Shop.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

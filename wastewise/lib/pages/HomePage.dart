@@ -1,51 +1,33 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, file_names
+// ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:wastewise/components/textfield.dart';
 
 class HomePage extends StatelessWidget {
-  HomePage({super.key});
-
-  final searchcontroller = TextEditingController();
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF9da993),
-      //appbar
-
+      extendBodyBehindAppBar: true,
       appBar: AppBar(
-        backgroundColor: Color(0xFF9da993),
-        title: Center(
-            child: Text(
+        backgroundColor: Colors.transparent,
+        title: Text(
           "Groceries",
           style: TextStyle(color: Colors.white),
-        )),
+        ),
         actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 20),
-            child: Icon(
-              Icons.person,
-              size: 45,
-              color: Colors.white,
-            ),
-          )
+          IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.person,
+                color: Colors.white,
+              ))
         ],
       ),
-      //body
-
-      body: Row(
-        children: [
-          Textfield(
-            controller: searchcontroller,
-            hintText: "Search here",
-            obscureText: false,
-          ),
-          // Icon(
-          //   Icons.tune,
-          //   size: 40,
-          // ),
-        ],
+      body: Container(
+        decoration: const BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage('lib/assets/Shop.png'), fit: BoxFit.cover)),
       ),
     );
   }

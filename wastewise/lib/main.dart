@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:wastewise/pages/login_page.dart';
 import 'pages/getstart.dart';
 import 'pages/HomePage.dart';
-
 void main() {
   runApp(const MyApp());
 }
@@ -25,9 +24,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Getstart(),
       routes: {
-        '/getstartedpage': (context) => Getstart(),
+        '/GetStartedPage': (context) => Getstart(),
         '/LoginPage': (context) => LoginPage(),
-        '/homepage': (context) => HomePage(),
+        '/HomePage': (context) => HomePage(),
       },
     );
   }
