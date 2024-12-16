@@ -27,18 +27,24 @@ class Getstart extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              //Waste Wise Logo
               Image.asset(
                 "lib/assets/wastewise_logo.png",
                 width: 80,
                 height: 80,
               ),
+              //Waste Wise Text Logo
               Wastewisetext(),
+
+              //Grocery Image
               Image.asset(
                 "lib/assets/grocerybag.png",
                 height: 200,
                 width: 200,
               ),
               SizedBox(height: 50),
+
+              //Text 
               Text(
                 "Instant updates on nearby discounted delicious food. ",
                 style: TextStyle(
@@ -48,9 +54,14 @@ class Getstart extends StatelessWidget {
                 ),
                 textAlign: TextAlign.center,
               ),
+
+              //Get Started Button
+
               SizedBox(
                 height: 80,
               ),
+
+              //Method to change page
               ElevatedButton(
                   onPressed: () {
                     Navigator.pushNamed(context, '/LoginPage');

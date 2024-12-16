@@ -8,7 +8,9 @@ class SignInButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context, '/homepage');
+        },
         style: ElevatedButton.styleFrom(
           backgroundColor: Colors.black,
           shape:
