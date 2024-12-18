@@ -46,7 +46,7 @@ class HomePage extends StatelessWidget {
               Center(
                 child: Textfield(
                     controller: searchcontroller,
-                    hintText: 'search here',
+                    hintText: 'Search here',
                     obscureText: false),
               ),
               SizedBox(height: 30),
@@ -56,15 +56,34 @@ class HomePage extends StatelessWidget {
                   height: 90,
                   width: double.infinity, // Use double.infinity for full width
                   decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  child: Padding(
-                    padding: const EdgeInsets.only(right: 40, left: 20),
-                    child: Text(
-                      'Never miss a green sticker',
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
-                    ),
+                    color: Colors.white,
+                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                  ),
+                  child: Row(
+                    crossAxisAlignment:
+                        CrossAxisAlignment.start, // Align items to the top
+                    children: [
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 10),
+                          child: Text(
+                            'Buy Expire or Buy Higher',
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 30),
+                            overflow: TextOverflow.visible, // Handle overflow
+                          ),
+                        ),
+                      ),
+                      Center(
+                        child: Padding(
+                          padding: const EdgeInsets.only(right: 20),
+                          child: Image.asset(
+                            'lib/assets/squirrelnoBG.png',
+                            height: 85, // Adjust height to prevent overflow
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),
@@ -84,13 +103,24 @@ class HomePage extends StatelessWidget {
               SizedBox(height: 20),
               Column(
                 children: [
-                  for (int i = 0; i < 3; i++)
-                    ShopButton(
-                        imagePath: 'lib/assets/cumart.jpg',
-                        shopName: 'CU MART',
-                        opsHours: '12PM - 12AM',
-                        deliveryFee: 'RM 2.90',
-                        distance: '2KM'),
+                  ShopButton(
+                      imagePath: 'lib/assets/cu_mart.jpg',
+                      shopName: 'CU MART',
+                      opsHours: '12PM - 12AM',
+                      deliveryFee: 'RM 2.90',
+                      distance: '2.0KM'),
+                  ShopButton(
+                      imagePath: 'lib/assets/e-mart.jpg',
+                      shopName: 'E-MART',
+                      opsHours: '12PM - 12AM',
+                      deliveryFee: 'RM 3.00',
+                      distance: '2.1KM'),
+                  ShopButton(
+                      imagePath: 'lib/assets/mynews.jpg',
+                      shopName: 'MYNEWS',
+                      opsHours: '12AM - 10PM',
+                      deliveryFee: 'RM 2.50',
+                      distance: '1.5 KM'),
                 ],
               )
             ],

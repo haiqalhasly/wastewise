@@ -1,5 +1,7 @@
-import 'package:flutter/material.dart';
+// ignore_for_file: prefer_const_constructors
 
+import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class ShopButton extends StatelessWidget {
   final String imagePath;
@@ -48,14 +50,35 @@ class ShopButton extends StatelessWidget {
                   ),
                   Row(
                     children: [
+                      Icon(
+                        FontAwesomeIcons.mapPin,
+                        color: Theme.of(context).primaryColor,
+                      ),
                       Text(distance),
                       SizedBox(
                         width: 20,
                       ),
+                      Icon(
+                        FontAwesomeIcons.clock,
+                        color: Theme.of(context).primaryColor,
+                      ),
+                      SizedBox(width: 5),
                       Text(opsHours)
                     ],
                   ),
-                  Text(deliveryFee)
+                  SizedBox(height: 10),
+                  Center(
+                    child: Container(
+                      padding: EdgeInsets.only(right: 120, left: 120),
+                      decoration: BoxDecoration(
+                          color: Color(0xFF9da993),
+                          borderRadius: BorderRadius.all(Radius.circular(10))),
+                      child: Text(
+                        deliveryFee,
+                        style: TextStyle(color: Colors.white, fontSize: 20),
+                      ),
+                    ),
+                  )
                 ],
               ),
             )

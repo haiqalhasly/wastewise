@@ -28,6 +28,8 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  font_awesome_flutter: ^10.2.1
+
   flutter:
     sdk: flutter
 
@@ -64,8 +66,12 @@ flutter:
     - lib/assets/Facebook_Logo_Primary.png
     - lib/assets/Shop.png
     - lib/assets/cumart.jpg
+    - lib/assets/cu_mart.jpg
     - lib/assets/emart.png
+    - lib/assets/e-mart.jpg
     - lib/assets/mynews.jpg
+    - lib/assets/squirrelWW.png
+    - lib/assets/squirrelnoBG.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
