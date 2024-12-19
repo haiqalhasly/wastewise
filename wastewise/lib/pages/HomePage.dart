@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:wastewise/components/allbutton.dart';
+import 'package:wastewise/components/drawer.dart';
 import 'package:wastewise/components/shopbutton.dart';
 import 'package:wastewise/components/textfield.dart';
 
@@ -15,6 +16,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
+        iconTheme: IconThemeData(color: Colors.white),
         backgroundColor: Colors.transparent,
         title: Center(
           child: Text(
@@ -32,6 +34,7 @@ class HomePage extends StatelessWidget {
               ))
         ],
       ),
+      drawer: MyDrawer(),
 
       //body
       body: Container(

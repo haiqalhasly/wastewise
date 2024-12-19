@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:wastewise/pages/login_page.dart';
 import 'pages/getstart.dart';
 import 'pages/HomePage.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           useMaterial3: true,
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
-          primaryColor: Colors.green,
+          primaryColor: Color(0xFF9da993),
           scaffoldBackgroundColor: Color(0xFF9da993),
           fontFamily: 'Ubuntu'),
       debugShowCheckedModeBanner: false,
