@@ -7,7 +7,7 @@ class ShopButton extends StatelessWidget {
   final String imagePath;
   final String shopName;
   final String opsHours;
-  final String deliveryFee;
+  final String itemsLeft;
   final String distance;
 
   const ShopButton(
@@ -15,7 +15,7 @@ class ShopButton extends StatelessWidget {
       required this.imagePath,
       required this.shopName,
       required this.opsHours,
-      required this.deliveryFee,
+      required this.itemsLeft,
       required this.distance});
 
   @override
@@ -69,12 +69,12 @@ class ShopButton extends StatelessWidget {
                   SizedBox(height: 10),
                   Center(
                     child: Container(
-                      padding: EdgeInsets.only(right: 120, left: 120),
+                      padding: EdgeInsets.only(right: 50, left: 50),
                       decoration: BoxDecoration(
                           color: Color(0xFF9da993),
                           borderRadius: BorderRadius.all(Radius.circular(10))),
                       child: Text(
-                        deliveryFee,
+                        itemsLeft,
                         style: TextStyle(color: Colors.white, fontSize: 20),
                       ),
                     ),

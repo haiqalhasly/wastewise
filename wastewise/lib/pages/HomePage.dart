@@ -107,19 +107,19 @@ class HomePage extends StatelessWidget {
                       imagePath: 'lib/assets/cu_mart.jpg',
                       shopName: 'CU MART',
                       opsHours: '12PM - 12AM',
-                      deliveryFee: 'RM 2.90',
+                      itemsLeft: '10 ITEMS LEFT',
                       distance: '2.0KM'),
                   ShopButton(
                       imagePath: 'lib/assets/e-mart.jpg',
                       shopName: 'E-MART',
                       opsHours: '12PM - 12AM',
-                      deliveryFee: 'RM 3.00',
+                      itemsLeft: '5 ITEMS LEFT',
                       distance: '2.1KM'),
                   ShopButton(
                       imagePath: 'lib/assets/mynews.jpg',
                       shopName: 'MYNEWS',
                       opsHours: '12AM - 10PM',
-                      deliveryFee: 'RM 2.50',
+                      itemsLeft: '7 ITEMS LEFT',
                       distance: '1.5 KM'),
                 ],
               )
