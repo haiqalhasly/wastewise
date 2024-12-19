@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:wastewise/pages/MartPage.dart';
 import 'package:wastewise/pages/login_page.dart';
 import 'pages/getstart.dart';
 import 'pages/HomePage.dart';
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
         '/GetStartedPage': (context) => Getstart(),
         '/LoginPage': (context) => LoginPage(),
         '/HomePage': (context) => HomePage(),
+        '/MartPage': (context) => MartPage(),
       },
     );
   }

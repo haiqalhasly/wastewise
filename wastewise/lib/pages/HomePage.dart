@@ -1,6 +1,7 @@
 // ignore_for_file: file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:wastewise/components/allbutton.dart';
 import 'package:wastewise/components/drawer.dart';
 import 'package:wastewise/components/shopbutton.dart';
@@ -28,9 +29,16 @@ class HomePage extends StatelessWidget {
           IconButton(
               onPressed: () {},
               icon: Icon(
-                Icons.person,
+                Icons.shopping_cart,
                 color: Colors.white,
-                size: 40,
+                size: 30,
+              )),
+          IconButton(
+              onPressed: () {},
+              icon: Icon(
+                FontAwesomeIcons.heart,
+                color: Colors.white,
+                size: 30,
               ))
         ],
       ),
@@ -106,18 +114,27 @@ class HomePage extends StatelessWidget {
               SizedBox(height: 20),
               Column(
                 children: [
-                  ShopButton(
-                      imagePath: 'lib/assets/cu_mart.jpg',
-                      shopName: 'CU MART',
-                      opsHours: '12PM - 12AM',
-                      itemsLeft: '10 ITEMS LEFT',
-                      distance: '2.0KM'),
+                  //Cu MArt
+                  GestureDetector(
+                      onTap: () {
+                        Navigator.pushNamed(context, '/MartPage');
+                      },
+                      child: ShopButton(
+                          imagePath: 'lib/assets/cu_mart.jpg',
+                          shopName: 'CU MART',
+                          opsHours: '12PM - 12AM',
+                          itemsLeft: '10 ITEMS LEFT',
+                          distance: '2.0KM')),
+
+                  //Emart
                   ShopButton(
                       imagePath: 'lib/assets/e-mart.jpg',
                       shopName: 'E-MART',
                       opsHours: '12PM - 12AM',
                       itemsLeft: '5 ITEMS LEFT',
                       distance: '2.1KM'),
+
+                  //MyNews
                   ShopButton(
                       imagePath: 'lib/assets/mynews.jpg',
                       shopName: 'MYNEWS',
