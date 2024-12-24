@@ -61,7 +61,7 @@ class LoginPage extends StatelessWidget {
                     child: Text("Email"),
                   ),
                   SizedBox(height: 5),
-                  Textfield(
+                  MyTextfield(
                     controller: addresscontroller,
                     hintText: 'Email',
                     obscureText: false,
@@ -73,7 +73,7 @@ class LoginPage extends StatelessWidget {
                     child: Text("Password"),
                   ),
                   SizedBox(height: 5),
-                  Textfield(
+                  MyTextfield(
                     controller: passwordcontroller,
                     hintText: 'Password',
                     obscureText: true,

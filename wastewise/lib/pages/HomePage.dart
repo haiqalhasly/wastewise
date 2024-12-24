@@ -55,7 +55,7 @@ class HomePage extends StatelessWidget {
             children: [
               SizedBox(height: 120),
               Center(
-                child: Textfield(
+                child: MyTextfield(
                     controller: searchcontroller,
                     hintText: 'Search here',
                     obscureText: false),

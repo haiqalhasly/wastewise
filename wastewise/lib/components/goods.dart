@@ -4,6 +4,7 @@ class Goods {
   final String category;
   final String image;
   final String price;
+  final String expiredDate;
   final String quantity;
 
   Goods({
@@ -12,6 +13,7 @@ class Goods {
     required this.category,
     required this.image,
     required this.price,
+    required this.expiredDate,
     required this.quantity,
   });
 }
