@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:wastewise/components/descriptionbox.dart';
 import 'package:wastewise/components/drawer.dart';
 import 'package:wastewise/components/my_current_location.dart';
 
@@ -33,17 +34,17 @@ class MartPage extends StatelessWidget {
               ))
         ],
       ),
-      drawer: MyDrawer(),
+      drawer: const MyDrawer(),
       backgroundColor: Colors.white,
-      body: Column(
+      body: const Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Divider(
             color: Colors.grey,
             indent: 25,
-            endIndent: 25,
-          ),
-          MyCurrentLocation()
+            endIndent: 25,),
+          MyCurrentLocation(),
+          Descriptionbox(),
         ],
       ),
     );
