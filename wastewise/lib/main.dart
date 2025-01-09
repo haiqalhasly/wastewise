@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:wastewise/pages/MartPage.dart';
 import 'package:wastewise/pages/login_page.dart';
+import 'package:wastewise/pages/productDetail.dart';
 import 'pages/getstart.dart';
 import 'pages/HomePage.dart';
 
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
         '/LoginPage': (context) => LoginPage(),
         '/HomePage': (context) => HomePage(),
         '/MartPage': (context) => MartPage(),
+        '/ProductDetailPage': (context)=> Productdetail()
       },
     );
   }

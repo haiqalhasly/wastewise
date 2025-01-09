@@ -115,16 +115,12 @@ class HomePage extends StatelessWidget {
               Column(
                 children: [
                   //Cu MArt
-                  GestureDetector(
-                      onTap: () {
-                        Navigator.pushNamed(context, '/MartPage');
-                      },
-                      child: ShopButton(
-                          imagePath: 'lib/assets/cu_mart.jpg',
-                          shopName: 'CU MART',
-                          opsHours: '12PM - 12AM',
-                          itemsLeft: '10 ITEMS LEFT',
-                          distance: '2.0KM')),
+                  ShopButton(
+                      imagePath: 'lib/assets/cu_mart.jpg',
+                      shopName: 'CU MART',
+                      opsHours: '12PM - 12AM',
+                      itemsLeft: '10 ITEMS LEFT',
+                      distance: '2.0KM'),
 
                   //Emart
                   ShopButton(
