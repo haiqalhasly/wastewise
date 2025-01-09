@@ -39,22 +39,24 @@ class MartPage extends StatelessWidget {
       ),
       drawer: const MyDrawer(),
       backgroundColor: Colors.white,
-      body: const Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: [
-          Divider(
-            color: Colors.grey,
-            indent: 25,
-            endIndent: 25,
-          ),
-          MyCurrentLocation(),
-          Descriptionbox(),
-          Items(),
-          Items(),
-          Items(),
-          Items(),
-          Items()
-        ],
+      body: const SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Divider(
+              color: Colors.grey,
+              indent: 25,
+              endIndent: 25,
+            ),
+            MyCurrentLocation(),
+            Descriptionbox(),
+            Items(),
+            Items(),
+            Items(),
+            Items(),
+            Items()
+          ],
+        ),
       ),
     );
   }
