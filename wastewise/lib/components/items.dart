@@ -16,14 +16,14 @@ class Items extends StatelessWidget {
 
           Column(
             children: [
-              SizedBox(height: 5),
+              const SizedBox(height: 5),
               Image.asset(
                 'lib/assets/grocerybag.png',
                 height: 130,
               ),
-              SizedBox(height: 10),
-              Text('10%'),
-              SizedBox(
+              const SizedBox(height: 10),
+              const Text('10%'),
+              const SizedBox(
                 height: 5,
               )
             ],
@@ -58,11 +58,11 @@ class Items extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             width: 80,
           ),
           //symbols
-          Column(
+          const Column(
             children: [
               Icon(FontAwesomeIcons.heart),
               SizedBox(height: 100),
