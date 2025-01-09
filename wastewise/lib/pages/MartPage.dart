@@ -39,8 +39,8 @@ class MartPage extends StatelessWidget {
       ),
       drawer: const MyDrawer(),
       backgroundColor: Colors.white,
-      body: SingleChildScrollView(
-        child: const Column(
+      body: const SingleChildScrollView(
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Divider(
