@@ -7,6 +7,7 @@ import 'package:wastewise/pages/productDetail.dart';
 import 'pages/getstart.dart';
 import 'pages/HomePage.dart';
 
+
 void main() {
   runApp(const MyApp());
 }
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
         '/LoginPage': (context) => LoginPage(),
         '/HomePage': (context) => HomePage(),
         '/MartPage': (context) => MartPage(),
-        '/ProductDetailPage': (context)=> Productdetail()
+        '/ProductDetailPage': (context) => Productdetail(),
       },
     );
   }

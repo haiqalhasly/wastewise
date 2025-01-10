@@ -6,9 +6,18 @@ class Items extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    debugPrint('Items widget is being built');
     return GestureDetector(
       onTap: () {
         Navigator.pushNamed(context, '/ProductDetailPage');
+        // Navigator.push(
+        //   context,
+        //   MaterialPageRoute(
+        //       builder: (context) =>
+        //           Scaffold(body: Center(child: Text('Product Details')))),
+        // );
+
+        debugPrint('Item tapped');
       },
       child: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20),
@@ -63,7 +72,7 @@ class Items extends StatelessWidget {
               ],
             ),
             const SizedBox(
-              width: 80,
+              width: 20,
             ),
             //symbols
             const Column(
