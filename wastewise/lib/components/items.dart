@@ -72,12 +72,15 @@ class Items extends StatelessWidget {
               ],
             ),
             const SizedBox(
-              width: 20,
+              width: 80,
             ),
             //symbols
             const Column(
               children: [
-                Icon(FontAwesomeIcons.heart),
+                Icon(
+                  FontAwesomeIcons.heart,
+                  color: Colors.red,
+                ),
                 SizedBox(height: 100),
                 Icon(FontAwesomeIcons.circlePlus),
               ],
