@@ -61,7 +61,9 @@ class Productdetail extends StatelessWidget {
           const SizedBox(height: 10),
           Center(
             child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, '/CartPage');
+                },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xFF396241),
                   shape: RoundedRectangleBorder(
