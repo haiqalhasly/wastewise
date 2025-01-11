@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class Productdetail extends StatelessWidget {
   const Productdetail({super.key});
@@ -62,7 +63,7 @@ class Productdetail extends StatelessWidget {
           Center(
             child: ElevatedButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, '/CartPage');
+                  Navigator.pushNamed(context, '/CartAnimationPage');
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xFF396241),
