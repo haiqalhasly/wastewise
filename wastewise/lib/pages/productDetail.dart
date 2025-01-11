@@ -34,26 +34,31 @@ class Productdetail extends StatelessWidget {
               ),
             ),
           ),
-          const Text(
-            'Grocery',
-            style: TextStyle(color: Colors.black, fontSize: 30),
+          const Padding(
+            padding: EdgeInsets.only(top: 15, left: 10),
+            child: Text(
+              'Omega Eggs 750g',
+              style: TextStyle(color: Colors.black, fontSize: 30),
+            ),
           ),
-          const Row(mainAxisAlignment: MainAxisAlignment.start, children: [
-            Text(
-              'RM 6.19',
-              style: TextStyle(decoration: TextDecoration.lineThrough),
-            ),
-            SizedBox(
-              width: 5,
-            ),
-            Text(
+          const Padding(
+            padding: EdgeInsets.only(left: 10),
+            child: Text(
               'RM 6.19',
               style: TextStyle(
                   fontSize: 28,
                   color: Colors.black,
                   fontWeight: FontWeight.bold),
             ),
-          ]),
+          ),
+          const Padding(
+            padding: EdgeInsets.only(left: 10),
+            child: Text(
+              'RM 8.00',
+              style: TextStyle(decoration: TextDecoration.lineThrough),
+            ),
+          ),
+          const SizedBox(height: 10),
           Center(
             child: ElevatedButton(
                 onPressed: () {},
