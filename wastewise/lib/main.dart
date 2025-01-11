@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:wastewise/pages/CartPage.dart';
 import 'pages/cartAnimationPage.dart';
 import 'package:wastewise/pages/MartPage.dart';
 import 'package:wastewise/pages/login_page.dart';
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
         '/MartPage': (context) => MartPage(),
         '/ProductDetailPage': (context) => Productdetail(),
         '/CartAnimationPage': (context) => Cartanimationpage(),
-
+        '/CartPage': (context) => Cartpage(),
       },
     );
   }
